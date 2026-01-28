@@ -1,3 +1,67 @@
+:root {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --card: #1e293b;
+}
+
+body.light {
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --card: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+section,
+header {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.interests-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.interests-list div {
+    background: var(--card);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.interests-list div:hover {
+    transform: translateY(-5px);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -47,4 +111,15 @@ h2 {
 
 .interests-list div:hover {
     transform: translateY(-5px);
+}
+
+#theme-toggle {
+    margin-top: 2rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: var(--card);
+    color: var(--text);
 }
