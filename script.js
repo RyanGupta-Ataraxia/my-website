@@ -1,3 +1,5 @@
+alert("JS is connected");
+
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
