@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+section,
+header {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.interests-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.interests-list div {
+    background: #1e293b;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.interests-list div:hover {
+    transform: translateY(-5px);
+}
