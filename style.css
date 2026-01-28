@@ -14,14 +14,6 @@ body.light {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    transition: background 0.3s, color 0.3s;
-}
 
 section,
 header {
@@ -69,9 +61,10 @@ h2 {
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
 }
 
 section,
